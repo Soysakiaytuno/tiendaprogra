@@ -1,0 +1,14 @@
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.AssemblyInfoInputs.cache
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.AssemblyInfo.cs
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.csproj.CoreCompileInputs.cache
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\bin\Debug\net9.0\TiendaOnline.exe
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\bin\Debug\net9.0\TiendaOnline.deps.json
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\bin\Debug\net9.0\TiendaOnline.runtimeconfig.json
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\bin\Debug\net9.0\TiendaOnline.dll
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\bin\Debug\net9.0\TiendaOnline.pdb
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.dll
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\refint\TiendaOnline.dll
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.pdb
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\TiendaOnline.genruntimeconfig.cache
+C:\Users\Mijael Ander\Desktop\csharp\tienda\TiendaOnline\obj\Debug\net9.0\ref\TiendaOnline.dll
