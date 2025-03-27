@@ -6,21 +6,20 @@ namespace TiendaOnline
     {
         static void Main(string[] args)
         {
-            // Crear el inventario y los reportes
             Inventario inventario = new Inventario();
             Reportes reportes = new Reportes();
 
-            // Variable para controlar el bucle de interacción
             bool continuar = true;
 
-            // Mostrar opciones disponibles al usuario
             InterfazUsuario.MostrarOpciones();
 
             while (continuar)
             {
                 Console.Write("\nIngrese un comando: ");
-                string comando = Console.ReadLine()?.Trim().ToLower();
-
+                string comando = Console.ReadLine();
+                comando = comando.ToLower();
+                comando = comando.Trim();
+                comando = comando.Replace (" ", "");
                 switch (comando)
                 {
                     case "agregar":
@@ -50,6 +49,9 @@ namespace TiendaOnline
 
                     case "opciones":
                         InterfazUsuario.MostrarOpciones();
+                        break;
+                    case "mostrarnombre":
+                        InterfazUsuario.Mostrarproducto(inventario);
                         break;
 
                     default:

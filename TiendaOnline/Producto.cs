@@ -9,7 +9,7 @@ namespace TiendaOnline
         public string Codigo { get; set; }
 
         public Producto(string nombre, double precio, string codigo){
-            Nombre = nombre;
+            Nombre = nombre.ToLower();
             Precio = precio;
             Codigo = codigo;
         }

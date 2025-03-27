@@ -11,6 +11,7 @@ namespace TiendaOnline
             Console.WriteLine("agregar   - Agregar un producto al inventario");
             Console.WriteLine("eliminar  - Eliminar un producto del inventario por código");
             Console.WriteLine("mostrar   - Mostrar todos los productos en el inventario");
+            Console.WriteLine("mostrarnombre - Muestra todos los productos con el mismo nombre");
             Console.WriteLine("stock     - Mostrar el stock de un producto por nombre");
             Console.WriteLine("venta     - Realizar una venta");
             Console.WriteLine("salir     - Salir del programa");
@@ -45,11 +46,18 @@ namespace TiendaOnline
         {
             Console.Write("Ingrese el nombre del producto para consultar su stock: ");
             string nombre = Console.ReadLine();
-
+            nombre = nombre.ToLower();
             int stock = inventario.ObtenerStockPorNombre(nombre);
             Console.WriteLine($"El stock actual de '{nombre}' es: {stock}");
         }
+        public static void Mostrarproducto(Inventario inventario)
+        {
+            Console.Write("Ingrese el nombre del producto: ");
+            string nombre = Console.ReadLine();
 
+            inventario.ObtenerProductoPorNombre(nombre);
+        }
+        
         public static void RealizarVenta(Inventario inventario, Reportes reportes)
         {
             List<Producto> productosSeleccionados = new List<Producto>();
@@ -57,11 +65,11 @@ namespace TiendaOnline
 
             Console.WriteLine("Ingrese los códigos de los productos a vender uno por uno. Escriba fin para terminar:");
             while (true){
-                string codigo = Console.ReadLine().Trim();
+                string codigo = Console.ReadLine();
+                codigo = codigo.Trim();
                 if (codigo.ToLower() == "fin"){ 
                     break;
                 }
-
                 Producto producto = inventario.ObtenerProductoPorCodigo(codigo);
 
                 if (producto != null){

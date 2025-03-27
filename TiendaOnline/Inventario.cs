@@ -38,6 +38,21 @@ namespace TiendaOnline
             Console.WriteLine($"Producto con código {codigoProducto} no encontrado.");
             return null;
         }
+        public void ObtenerProductoPorNombre(string nombreProducto){
+            bool productoencontrado = false; 
+            nombreProducto = nombreProducto.ToLower();
+            nombreProducto = nombreProducto.Trim();
+            foreach (var producto in productos.Values){
+                if(producto.Nombre == nombreProducto){
+                productoencontrado = true;
+                Console.WriteLine(producto.ToString());
+                }
+            }
+            if(!productoencontrado){
+                Console.WriteLine($"Producto con nombre {nombreProducto} no encontrado.");
+            }
+            
+        }
         public List<Producto> ObtenerTodosLosProductos()
         {
             return new List<Producto>(productos.Values);
